@@ -72,8 +72,14 @@ class HomePage extends Page {
         return $fields;
     }
 
-    public function BoxDefault($value) {
-        switch ($value) {
+    /**
+     * Default Values for Box Links as per original design
+     * 
+     * @param type $type
+     * @return boolean|string
+     */    
+    public function BoxDefault($type) {
+        switch ($type) {
             case 'Box1Title':
                 return 'Radiology';
             case 'Box1Link':

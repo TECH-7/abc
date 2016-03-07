@@ -108,6 +108,12 @@ JS
         return OurFriend::get()->limit($limit);
     }
     
+    /**
+     * Percentage width CSS value for Our Friends layout
+     * 
+     * @param type $limit
+     * @return string
+     */
     public function OurFriendsWidth($limit = 7) {
         return round(100.0 / $this->OurFriends($limit)->Count(),4) . '%';
     }     
