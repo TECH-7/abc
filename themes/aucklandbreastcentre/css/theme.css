@@ -1,0 +1,366 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300);
+
+/* ESSENTIALS */
+@media (min-width: 1685px) {
+    .container {
+        width: 1666px;
+    }
+}
+
+.slicknav_menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.slicknav_menutxt {
+    display: none!important;
+}
+.slicknav_icon {
+    margin-left: 0!important;
+}
+
+@media (max-width: 767px) {
+    .header-nav-col, .footer-nav-col, aside {
+        display: none!important;
+    }
+    
+    header {
+        margin-top: 50px;
+    }
+    
+    .slicknav_menu {
+        display: block;
+    }
+    
+    .main {
+        padding: 30px 0 0;
+    }
+    
+}
+/* EOF ESSENTIALS */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #4e4e4e;
+}
+
+a {
+    color: #004b6e;
+}
+a:hover {
+    text-decoration: none;
+    color: #004b6e;
+}
+
+h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+p {
+    line-height: 1.3;
+}
+
+address {
+    line-height: 1.2;
+}
+
+.header {
+    background: transparent;
+    z-index: 10;
+}
+
+.navbar-brand {
+    /*display: inline-block;*/
+    padding: 0;
+    height: auto;
+}
+.logo {
+    max-width: 347px;
+    height: auto;
+    width: 100%;
+}
+.header-brand-col {
+    z-index: 10;
+}
+
+#header-appointment {
+    position: absolute;
+    right: 75px;
+}
+
+.appointment-link {
+    padding: 28px 34px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #c0d8e0;
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    max-width: 300px;
+}
+
+#header-search {
+    /*position: absolute;
+    bottom: 0;
+    right: 0;*/
+    display: block;
+    z-index: 1;
+    float: right;
+    min-width: 340px;
+}
+
+
+.main {
+    min-height: 300px;
+    padding: 30px 0 0;
+}
+
+
+.home-container section > div, section.our-friends > div {
+    margin-bottom: 100px;
+}
+
+.welcome-image {
+    max-width: 1651px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.icon-play {
+    position: absolute;
+    display: block;
+    width: 10%;
+    height: auto;
+    left: 45%;
+    top: 45%;
+}
+
+.welcome-content {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 26px;
+    width: 29%;
+    max-height: 80%;
+    overflow: hidden;
+}
+.welcome-content * {
+    color: white;
+}
+
+.home-container h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.boxes a {
+    display: block;
+    max-width: 512px;
+    margin: auto;
+}
+
+.boxes img {
+    width: 100%;
+    max-width: 512px;
+    height: auto;
+    display: inline-block;
+}
+.boxes .col-md-4 {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+.boxes .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.boxes figcaption {
+    position: absolute;
+    display: block;
+    bottom: 12%;
+    left: 10%;
+    color: white;
+    font-size: 55px;   
+}
+
+.appointment {
+    text-align: center;
+}
+
+.appointment p {
+    padding-bottom: 40px;
+}
+
+.mammography img[alt="icon"] {
+    vertical-align: middle;
+}
+
+.mammography-right img {
+    width: 100%;
+    height: auto;
+    max-width: 793px;
+}
+
+.mammography > div > div {
+    padding-bottom: 20px;
+}
+.mammography > div > div.mammography-right {
+    padding-bottom: 0px;
+}
+
+.our-friends h1 {
+    text-align: center;
+}
+
+.our-friends-loop {
+    position: relative;
+    width: 100%
+}
+
+.our-friends-loop > div {
+    float:left;
+    text-align: center;
+    display: inline-block;
+    
+}
+.our-friends-loop > div a {
+    display: block;
+    border-right: 1px solid #bbbbbb;
+    
+}
+.our-friends-loop > div.first a {
+    border-left: 1px solid #bbbbbb;
+}
+
+.our-friends-loop > div img {
+    display: inline-block;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* FOOTER */
+.footer {
+    padding: 0;
+    font-size: 20px;
+}
+
+.site-info {
+    background: #ededed;
+    padding: 110px 0 80px;
+}
+
+.footer table td {
+    border-color: black!important;
+    padding: 0!important;
+}
+.footer table td img {
+    vertical-align: middle;
+}
+
+.footer table .cell-label {
+    font-weight: 100;
+}
+.footer table .cell-value {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.footer form {
+    width: 100%;
+    max-width: auto;
+}
+
+.footer table .cell-form {
+    border: none;
+}
+.footer table .cell-form input {
+    width: 100%;
+    padding: 0px 15px;
+    height: 45px;
+    border: none;
+    margin: 2px;
+    border-radius: 0; 
+}
+.footer table .cell-form input[type="submit"] {
+    background: #0d445d;
+}
+
+.footer table .cell-form button {
+    
+}
+.footer a {
+
+        }
+	.footer a:hover {
+
+        }
+	.footer .left {
+	    float: left;
+	    color: #000;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.footer .right {
+	    float: right;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.footer span {
+	    padding: 0 3px;
+	    color: #bbb;
+	}
+	.footer .primary ul {
+	    display: inline;
+	    margin: 0;
+	    padding: 0;
+	}
+		.footer .primary li {
+		    display: inline;
+		}
+	.ie6 .footer .primary li,
+	.ie7 .footer .primary li { /* this is a bugfix for ie6/7 */
+	    display: inline;
+	    zoom: 1;
+	    margin-right: 10px;
+	}
+	.footer .primary li:after { /* adds '/' to separate the footer navigation items */
+	    padding: 0 3px 0 5px;
+	}
+	.footer .primary li:last-child:after {
+	    content: ''; /* makes sure last nav item doesn't have a '/' following it */
+	}
+	.footer .arrow {
+	    padding: 0 8px 0 5px;
+	    color: #b80000;
+	    font-size: 13px;
+	}
+       
+        .last-section .row > div {
+            display: inline-block;
+        }
+        .last-section .row > div > div {
+            vertical-align: middle;
+        }
+        
+.copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 54px 0;
+}
+
+.footer-nav-col {
+    text-align: center;
+}

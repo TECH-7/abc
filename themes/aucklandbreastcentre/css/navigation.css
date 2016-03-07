@@ -1,0 +1,112 @@
+/* NAVIGATION */
+
+	/* Primary navigation */
+        nav.primary {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .header-nav-col, .footer-nav-col {
+		position: relative; /* used to position the main navigation */
+	}
+	/*.primary ul {
+		position:absolute;
+		bottom:0;
+		right:0;
+	}*/
+	.primary li  {
+	    float: left;
+	    margin: 0 18px;
+	    position: relative;
+	    white-space: nowrap; /* forces text to never wrap onto a second line */
+            line-height: 1.5;
+	}
+        .primary li.first  {
+            margin-left: 0;
+        }
+        .primary li.last  {
+            margin-right: 0;
+        }
+	.primary li a {
+	    /*padding: 6px 8px;*/
+	    display: block;
+            font-weight: 100;
+	}
+	.primary li a:hover {
+	    font-weight: 300;
+            color: #004b6e;
+	}
+	.primary li.section a,
+	.primary li.current a {
+	    font-weight: 300;
+	}
+	.primary li.section:after,
+	.primary li.current:after {
+	    content: '}'; /* adds triangle beneath current nav item ('}' is renders as a triangle when WebSymbolsRegular is set as the font) */
+	    display: block;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: -7px;
+	    bottom: -7px;
+	    font-family: 'WebSymbolsRegular';
+	    font-size: 30px;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 20px;
+	}
+                
+
+.primary li ul.sub-menu { 
+    display:none;
+}
+.primary li:hover ul.sub-menu {
+    display: block;
+    list-style: none;
+    position: absolute;
+    margin: 0 0 0 -10px;
+    width: 340px;
+    z-index: 49;
+}
+.primary li:hover ul.sub-menu li {
+    list-style: none; 
+    margin: 0 3px; 
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #f1f1f0;
+}
+
+.primary li ul.sub-menu li a {
+    border-bottom: 1px solid black;
+    width: 98%;
+    padding: 5px 0 5px 2%;
+    display: block;
+}
+
+footer ul.sub-menu {
+    display: none!important;
+}
+
+@media (min-width: 768px) {
+    nav a {
+        font-size: 20px;
+        color: black;
+    }
+    
+    .header nav.primary {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .primary li a:hover {
+        text-decoration: none;
+        font-weight: 300;
+        
+    }
+    
+    .header-nav-col {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,36 @@
+.box-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.slides {
+        -webkit-transform: rotate(-45deg);
+    height: 100%;
+    position: relative;
+    top: 250px;
+    left: -150px;
+    width: 250%
+}
+.slides:before, .slides:after {
+    position: absolute;
+    width: 5000px;
+    height: 5000px;
+    background: rgba(9, 128, 178, 0.5);
+    content: '';
+    display: block;
+    z-index: 12;
+    top: -2500px;
+    -webkit-transition: .5s;
+}
+.slides:before {
+    right: 100%;
+}
+.slides:after {
+    left: 100%;
+}
+.box-wrapper:hover .slides:before {
+    right: 100%
+}
+.box-wrapper:hover .slides:after {
+    left: 0%
+}

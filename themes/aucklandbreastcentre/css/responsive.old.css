@@ -1,0 +1,257 @@
+@media (max-width: 767px) {
+    .navbar-brand, .brand {
+        width: 100%;
+    }
+    
+    .navbar-brand > img, .logo {
+        max-width: none;
+    }
+
+    #header-appointment {
+        position: relative;
+        width: auto;
+        top: 0;
+        right: 0;
+    }
+
+    #header-search {
+        margin-top: -74px;
+    }
+    
+    .footer table td {
+        line-height: 45px!important;
+    }   
+    
+    .home-container section > div, section.our-friends > div {
+        margin-bottom: 50px;
+    }
+    
+    .site-info {
+        background: #ededed;
+        padding: 55px 0 40px;
+    }
+
+    .welcome-content {
+        right: 5%;
+        width: 84%;
+        font-size: 20px;
+    }
+    
+    .welcome-content h1 {
+        font-size: 28px;
+        padding-bottom: 16px;
+    }      
+}
+
+@media (max-width: 360px) {
+    .welcome-content {
+        right: 5%;
+        width: 84%;
+        font-size: 13px;
+    }
+    
+    .welcome-content h1 {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .home-container h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }    
+    
+    .mammography {
+        font-size: 18px;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 26px;
+    }
+
+    header.header .row {
+        text-align: center;
+    }
+    .header-brand-col {
+        width: 50%;
+    }    
+    
+    .header-nav-col {
+        display: inline-block;
+        margin-top: 30px;
+    }
+    .appointment-link {
+        padding: 42px 34px;    
+    }
+    
+    .header-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .header nav a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    .home-container h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+        
+    
+    .welcome-content {
+        font-size: 13px;
+    }
+    
+    .mammography {
+        font-size: 18px;
+    }
+    
+    .footer table td {
+       padding: 4px 0!important;
+    }
+    
+    .boxes figcaption {
+        font-size: 40px;   
+    }
+    
+    footer nav.primary {
+        margin-top: 40px;
+    }
+    
+    .copyright {
+        padding: 0 0
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header nav a {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 37px;
+    }
+    
+    .home-container h1 {
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+    
+    body {
+        font-size: 26px;
+    }
+    
+    .header nav.primary {
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+    nav.primary li {
+        line-height: 1.8;
+    }
+
+    .welcome-content, .mammography {
+        font-size: 18px;
+    }
+    
+    .footer table td {
+       padding: 4px 0!important;
+    }    
+    
+    .boxes figcaption {
+        font-size: 45px;   
+    }
+    
+    footer nav.primary li a {
+        font-size: 15px;
+    }    
+    
+    footer nav.primary {
+        margin-top: 20px;
+        margin-left: 10%;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .footer table td {
+        line-height: 45px!important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1684px){
+    .header nav.primary {
+        margin-top: 30px;
+    }
+    
+    .header nav a {
+        font-size: 14px;
+    }
+    
+    .primary li:hover ul.sub-menu {    
+        padding: 58px 0 0 0;
+    }
+    
+    footer nav.primary li a {
+        font-size: 15px;
+    }
+    
+    footer nav.primary {
+        margin-top: 44px;
+    }
+    
+    .appointment-link {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    .home-container h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .boxes figcaption {
+        font-size: 50px;   
+    }
+    
+    body {
+        font-size: 26px;
+    }
+    
+    .welcome-content, .mammography {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1685px) {
+    .header nav.primary {
+        margin-top: 60px;
+    }
+    .primary li:hover ul.sub-menu {    
+        padding: 45px 0 0 0;
+    }    
+    
+    .header .container .row > div {
+        height: 105px;
+    }
+    #header-appointment {
+        bottom: 0;
+    }
+    
+    #header-search {
+        margin-top: 30px;
+    }
+    
+    footer .primary li {
+        line-height: 131px;
+    }    
+}
