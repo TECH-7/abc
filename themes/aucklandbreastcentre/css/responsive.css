@@ -93,10 +93,6 @@
         font-size: 18px;
     }
     
-    .footer table td {
-       padding: 4px 0!important;
-    }    
-    
     .boxes figcaption {
         font-size: 45px;   
     }
@@ -167,10 +163,6 @@
     
     .mammography {
         font-size: 18px;
-    }
-    
-    .footer table td {
-       padding: 4px 0!important;
     }
     
     .boxes figcaption {
@@ -334,14 +326,12 @@
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
-    footer .table-responsive .table td.cell-value {
-        font-size: 15px;
+    footer .cell-value-email {
+        font-size: 80%;
     }
     
 }
 
 @media (min-width: 768px) and (max-width: 1684px) {
-    .table-responsive {
-        overflow-x: visible;
-    }
+
 }

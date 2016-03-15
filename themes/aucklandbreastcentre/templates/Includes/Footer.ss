@@ -25,82 +25,74 @@
                     <header>
                         <h1>Get in touch</h1>
                     </header>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <td class="cell-label">Phone</td>
-                                <td class="cell-value"><a href="tel:$SiteConfig.Phone">$SiteConfig.Phone</a></td>
-                            </tr>
-                            <tr>
-                                <td class="cell-label">Email</td>
-                                <td class="cell-value"><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></td>
-                            </tr>
-                            <tr>
-                                <td class="cell-label">Address</td>
-                                <td class="cell-value"><address>$SiteConfig.Address</address></td>
-                            </tr>
-                            <tr>
-                                <td class="cell-label">&#160;</td>
-                                <td class="cell-value">&#160;</td>
-                            </tr>                    
-                        </table>
-                    </div>
+                    <ul>
+                        <li class="row first">
+                            <div class="col-xs-2 cell-label">Phone</div>
+                            <div class="col-xs-10 cell-value"><a href="tel:$SiteConfig.Phone">$SiteConfig.Phone</a></div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-2 cell-label">Email</div>
+                            <div class="col-xs-10 cell-value cell-value-email"><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-2 cell-label">Address</div>
+                            <div class="col-xs-10 cell-value"><address>$SiteConfig.Address</address></div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <header>
                         <h1>Follow Us</h1>
                     </header>
-                    <table class="table">
+                    <ul>
                         <% if $SiteConfig.FacebookLink %>
-                        <tr>
-                            <td class="cell-label"><a href="$SiteConfig.FacebookLink" target="_blank">Get our updates on Facebook</a></td>
-                            <td class="cell-value"><a href="$SiteConfig.FacebookLink" target="_blank"><img src="$ThemeDir/images/icon-facebook.png"></a></td>
-                        </tr>
+                        <li class="row first">
+                            <div class="col-xs-11 cell-label"><a href="$SiteConfig.FacebookLink" target="_blank">Get our updates on Facebook</a></div>
+                            <div class="col-xs-1 cell-value"><a href="$SiteConfig.FacebookLink" target="_blank"><img src="$ThemeDir/images/icon-facebook.png"></a></div>
+                        </li>
                         <% end_if %>
                         <% if $SiteConfig.InstagramLink %>
-                        <tr>
-                            <td class="cell-label"><a href="$SiteConfig.InstagramLink" target="_blank">Get our updates on Instagram</a></td>
-                            <td class="cell-value"><a href="$SiteConfig.InstagramLink" target="_blank"><img src="$ThemeDir/images/icon-instagram.png"></a></td>
-                        </tr>
+                        <li class="row">
+                            <div class="col-xs-11 cell-label"><a href="$SiteConfig.InstagramLink" target="_blank">Get our updates on Instagram</a></div>
+                            <div class="col-xs-1 cell-value"><a href="$SiteConfig.InstagramLink" target="_blank"><img src="$ThemeDir/images/icon-instagram.png"></a></div>
+                        </li>
                         <% end_if %>
                         <% if $SiteConfig.FacebookLink == '' %>
-                        <tr>
-                            <td class="cell-label">&#160;</td>
-                            <td class="cell-value">&#160;</td>
-                        </tr>
+                        <li class="row">
+                            <div class="col-xs-11 cell-label">&#160;</div>
+                            <div class="col-xs-1 cell-value">&#160;</div>
+                        </li>
                         <% end_if %>
                         <% if $SiteConfig.InstagramLink == '' %>
-                        <tr>
-                            <td class="cell-label">&#160;</td>
-                            <td class="cell-value">&#160;</td>
-                        </tr>
+                        <li class="row">
+                            <div class="col-xs-11 cell-label">&#160;</div>
+                            <div class="col-xs-1 cell-value">&#160;</div>
+                        </li>
                         <% end_if %>
-                        <tr>
-                            <td class="cell-label">&#160;</td>
-                            <td class="cell-value">&#160;</td>
-                        </tr>
-                        <tr>
-                            <td class="cell-label">&#160;</td>
-                            <td class="cell-value">&#160;</td>
-                        </tr>                      
-                    </table>
+                        <li class="row">
+                            <div class="col-xs-11 cell-label">&#160;</div>
+                            <div class="col-xs-1 cell-value">&#160;</div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <header>
                         <h1>ABC Newsletter</h1>
                     </header>
-                    <form><table class="table" width="100%">
-                        <tr>
-                            <td colspan="2">Signup to recieve our email newsletter</td>
-                        </tr>
-                        <tr>
-                            <td class="cell-form" colspan="2"><input name="name" placeholder="Name"></td>
-                        </tr>
-                        <tr>
-                            <td class="cell-form" width="50%"><input name="Email" placeholder="Email"></td>
-                            <td class="cell-form" width="50%"><input type="submit" value="Sign Up"></td>
-                        </tr>
-                    </table></form>
+                    <form id="footer-search">
+                        <ul>
+                            <li class="row first">
+                                <div>Signup to recieve our email newsletter</div>
+                            </li>
+                            <li class="row">
+                                <div class="col-xs-12 cell-form"><input name="name" placeholder="Name"></div>
+                            </li>
+                            <li class="row">
+                                <div class="col-xs-6 cell-form"><input name="Email" placeholder="Email"></div>
+                                <div class="col-xs-6 cell-form"><input type="submit" value="Sign Up"></div>
+                            </li>
+                        </ul>
+                    </form>
                 </div>            
             </div>
         </div>

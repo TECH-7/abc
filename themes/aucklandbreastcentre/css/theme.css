@@ -261,31 +261,52 @@ address {
     padding: 110px 0 80px;
 }
 
-.footer table td {
-    border-color: black!important;
-    padding: 0!important;
+.footer .site-info > div > .row > div {
+    padding-bottom: 30px;
 }
-.footer table td img {
+
+.footer .site-info ul > li {
+    border-bottom: 1px solid black;
+    padding: 0;
+    line-height: 45px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer .site-info ul > li.first {
+    border-top: 1px solid black;
+}
+.footer .site-info #footer-search ul > li {
+    border: none;
+}
+.footer .site-info ul > li address {
+    line-height: 40px;   
+}
+.footer .site-info ul li > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer .site-info ul div img {
     vertical-align: middle;
 }
 
-.footer table .cell-label {
+.footer .site-info ul .cell-label {
     font-weight: 100;
 }
-.footer table .cell-value {
+.footer .site-info ul .cell-value {
     text-align: right;
     vertical-align: middle;
 }
 
-.footer form {
+.footer .site-info form {
     width: 100%;
     max-width: auto;
 }
 
-.footer table .cell-form {
+.footer .site-info ul .cell-form {
     border: none;
 }
-.footer table .cell-form input {
+.footer .site-info ul .cell-form input {
     width: 100%;
     padding: 0px 15px;
     height: 45px;
@@ -293,11 +314,11 @@ address {
     margin: 2px;
     border-radius: 0; 
 }
-.footer table .cell-form input[type="submit"] {
+.footer .site-info ul .cell-form input[type="submit"] {
     background: #0d445d;
 }
 
-.footer table .cell-form button {
+.footer .site-info ul .cell-form button {
     
 }
 .footer a {
